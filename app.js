@@ -1,33 +1,41 @@
-window.onload=function() {
-// Flags variables
+// Flags UI variables
+    const england = document.querySelector("#flagEngland");
+    const italy = document.querySelector("#flagItaly");
+    const spain = document.querySelector("#flagSpain");
+    const bio = document.querySelector("#bio");
 
-    const england = document.getElementById(flagEngland);
-    const italy = document.getElementById(flagItaly);
-    const spain = document.getElementById(flagSpain);
-    const bioText = document.getElementById(bio);
+
 
 // Event listeners
-
-// English
+    
+    // English
     england.addEventListener("click", englishBio);
 
-
-
-// Italian
+    // Italian Event 
     italy.addEventListener("click", italianBio);
 
-
-
-// Spanish
+    // Spanish Event
     spain.addEventListener("click", spanishBio);
-
 
 
 
 // Changing the language
 
+    // English
+
     function englishBio() {
         console.log("test");
+        bio.textContent = "Hello";
     }
 
-}
+    // Italian
+
+    function italianBio() {
+        bio.textContent = "Ciao";
+    }
+
+    // Spanish
+
+    function spanishBio() {
+        bio.textContent = "Hola";
+    }
